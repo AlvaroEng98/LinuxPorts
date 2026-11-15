@@ -1,0 +1,9 @@
+.linuxports-row-title {
+    padding: 8px 4px;
+    font-size: 1.05em;
+}
+
+.linuxports-confirm-message {
+    min-width: 360px;
+    padding: 12px;
+}

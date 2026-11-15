@@ -1,0 +1,9 @@
+{
+  "uuid": "linuxports@alvaroeng98",
+  "name": "Linux Ports",
+  "description": "Ver los puertos en uso, sus procesos y terminarlos desde la barra de GNOME.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "url": "https://github.com/AlvaroEng98/LinuxPorts"
+}
