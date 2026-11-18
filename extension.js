@@ -131,7 +131,9 @@ class LinuxPortsIndicator extends PanelMenu.Button {
             const pid = processMatch[2];
             const process = processMatch[1];
             const address = endpoint.slice(0, endpoint.length - portMatch[0].length) || '*';
-            const key = `${protocol}|${address}|${port}|${pid}`;
+            // Un proceso puede abrir el mismo puerto en varias interfaces.
+            // Como la interfaz no muestra el host, esas filas serían duplicadas.
+            const key = `${protocol}|${port}|${pid}`;
             if (seen.has(key))
                 continue;
             seen.add(key);
